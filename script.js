@@ -133,6 +133,62 @@
 //     console.log("Invalid ");
 // }
 
+
+// assigment no 14
+// var angle1 = parseInt(prompt("Enter the angle of the first side:"));
+// var angle2 = parseInt(prompt("Enter the angle of the second side:"));
+// var angle3 = parseInt(prompt("Enter the angle of the third side:"));
+
+// if (angle1 <= 0 || angle2 <= 0 || angle3 <= 0) {
+//     console.log("Angle must be greater than 0");
+// } else if (angle1 + angle2 + angle3 === 180) {
+//     console.log("Your triangle is valid");
+// } else {
+//     console.log("Your Triangle is not valid. The sum of angles is always equal to 180");
+// }
+
+//assigment no 15
+// var side1 = parseFloat(prompt("Enter the length of the first side:"));
+// var side2 = parseFloat(prompt("Enter the length of the second side:"));
+// var side3 = parseFloat(prompt("Enter the length of the third side:"));
+
+
+// if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
+//     console.log("Side lengths must be greater than 0.");
+// } else if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+//     console.log("The triangle is valid.");
+// } else {
+//     console.log("The triangle is not valid. The sum of the lengths of any two sides must be greater than the third side.");
+// }
+
+// assigment no 16
+// var side1 = prompt("Enter the length of the first side:");
+// var side2 = prompt("Enter the length of the second side:");
+// var side3 = prompt("Enter the length of the third side:");
+
+
+// if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
+//     console.log("The sides of the triangle must be positive values.");
+// } else if (side1 === side2 && side2 === side3) {
+//     console.log("The triangle is an equilateral triangle.");
+// } else if (side1 === side2 || side2 === side3 || side1 === side3) {
+//     console.log("The triangle is an isosceles triangle.");
+// } else {
+//     console.log("The triangle is a scalene triangle.");
+// }
+
+//assigment no 18
+// var costprice = prompt("Enter cost price");
+// var sellingprice = prompt("Enter selling price");
+
+// if (costprice > sellingprice) {
+//     console.log("You are selling at a loss");
+// } else if (costprice < sellingprice) {
+//     console.log("You are selling at a profit");
+// } else {
+//     console.log("No profit, no loss");
+// }
+
 // assigment no 19
 // var userInput = prompt("enter marks");
 // if(userInput >= 90 && userInput <= 100){
@@ -156,3 +212,28 @@
 // else{
 //     console.log("Invalid ");
 // }
+
+// assigment no 21
+function calculatebill(units) {
+    let totalbill = 0;
+
+    if (units <= 50) {
+        totalbill = units * 0.50;
+    } else if (units <= 100) {
+        totalbill = 50 * 0.50 + (units - 50) * 0.75;
+    } else if (units <= 150) {
+        totalbill = 50 * 0.50 + 100 * 0.75 + (units - 100) * 1.20;
+    } else { 
+        totalbill = 50 * 0.50 + 100 * 0.75 + 50 * 1.20 + (units - 150) * 1.50;
+    }
+    
+ 
+    totalbill = totalbill + (totalbill * 0.20);
+
+    return totalbill;
+}
+
+let units = prompt("Enter the units: ");
+
+console.log("Total bill is = " + calculatebill(units).toFixed(2));
+
