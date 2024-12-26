@@ -213,27 +213,29 @@
 //     console.log("Invalid ");
 // }
 
-// assigment no 21
-function calculatebill(units) {
-    let totalbill = 0;
 
-    if (units <= 50) {
-        totalbill = units * 0.50;
-    } else if (units <= 100) {
-        totalbill = 50 * 0.50 + (units - 50) * 0.75;
-    } else if (units <= 150) {
-        totalbill = 50 * 0.50 + 100 * 0.75 + (units - 100) * 1.20;
-    } else { 
-        totalbill = 50 * 0.50 + 100 * 0.75 + 50 * 1.20 + (units - 150) * 1.50;
-    }
+
+// assigment no 21
+// function calculatebill(units) {
+//     var totalbill = 0;
+
+//     if (units <= 50) {
+//         totalbill = units * 0.50;
+//     } else if (units <= 100) {
+//         totalbill = 50 * 0.50 + (units - 50) * 0.75;
+//     } else if (units <= 150) {
+//         totalbill = 50 * 0.50 + 100 * 0.75 + (units - 100) * 1.20;
+//     } else { 
+//         totalbill = 50 * 0.50 + 100 * 0.75 + 50 * 1.20 + (units - 150) * 1.50;
+//     }
     
  
-    totalbill = totalbill + (totalbill * 0.20);
+//     totalbill = totalbill + (totalbill * 0.20);
 
-    return totalbill;
-}
+//     return totalbill;
+// }
 
-let units = prompt("Enter the units: ");
+// var units = prompt("Enter the units: ");
 
-console.log("Total bill is = " + calculatebill(units).toFixed(2));
+// console.log("Total bill is = " + calculatebill(units).toFixed(2));
 
