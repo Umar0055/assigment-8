@@ -191,36 +191,36 @@
 
 // assigment no 19
 
-let english = Number(prompt("Enter Your English Marks /100"));
-let math = Number(prompt("Enter Your Math Marks /100")); 
-let computer = Number(prompt("Enter Your Computer Marks /100"));
-let physics = Number(prompt("Enter Your Physics Marks /75"));
-let chemistry = Number(prompt("Enter Your Chemistry Marks /75"));
+// var english = Number(prompt("Enter Your English Marks /100"));
+// var math = Number(prompt("Enter Your Math Marks /100")); 
+// var computer = Number(prompt("Enter Your Computer Marks /100"));
+// var physics = Number(prompt("Enter Your Physics Marks /75"));
+// var chemistry = Number(prompt("Enter Your Chemistry Marks /75"));
 
-var totalmarks = english + math + computer + physics + chemistry;
-var percentage = (totalmarks / 450) * 100;
+// var totalmarks = english + math + computer + physics + chemistry;
+// var percentage = (totalmarks / 450) * 100;
 
-if (percentage >= 90 && percentage <= 100) {
-    console.log("grade A");
-}
-else if (percentage >= 80 && percentage <= 89) {
-    console.log("grade B");
-}
-else if (percentage >= 70 && percentage <= 79) {
-    console.log("grade C");
-}
-else if (percentage >= 60 && percentage <= 69) {
-    console.log("grade D");
-}
-else if (percentage >= 40 && percentage <= 59) {
-    console.log("grade E");
-}
-else if (percentage < 40 && percentage >= 0) {
-    console.log("grade F");
-}
-else {
-    console.log("Invalid percentage");
-}
+// if (percentage >= 90 && percentage <= 100) {
+//     console.log("grade a");
+// }
+// else if (percentage >= 80 && percentage <= 89) {
+//     console.log("grade b");
+// }
+// else if (percentage >= 70 && percentage <= 79) {
+//     console.log("grade c");
+// }
+// else if (percentage >= 60 && percentage <= 69) {
+//     console.log("grade d");
+// }
+// else if (percentage >= 40 && percentage <= 59) {
+//     console.log("grade e");
+// }
+// else if (percentage < 40 && percentage >= 0) {
+//     console.log("grade f");
+// }
+// else {
+//     console.log("Invalid input");
+// }
 
 
 
