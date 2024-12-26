@@ -50,9 +50,9 @@
 //     console.log("numver is odd")
 // }
 
-// assigment no 8 working
+// assigment no 8 
 // var inputuser=prompt("enter ");
-// if(inputuser >='a'&& inputuser<='e' ){
+// if(inputuser ==='a'|| inputuser==='e' || inputuser==='e' ||inputuser==='i'|| inputuser==='o'|| inputuser==='u'){
 //     console.log("vowels")
 // }else{
 //     console.log("constant")
@@ -190,28 +190,38 @@
 // }
 
 // assigment no 19
-// var userInput = prompt("enter marks");
-// if(userInput >= 90 && userInput <= 100){
-//     console.log("grade a");
-// }
-// else if(userInput >= 80 && userInput < 89){
-//     console.log("grade b");
-// }
-// else if(userInput >= 70  && userInput < 79){
-//     console.log("grade c");
-// }
-// else if(userInput >= 60 && userInput < 69){
-//     console.log("grade d");
-// }
-// else if(userInput >= 40  && userInput < 59){
-//     console.log("grade e");
-// }
-// else if(userInput >= 0 && userInput < 39){
-//     console.log("grade f");
-// }
-// else{
-//     console.log("Invalid ");
-// }
+
+let english = Number(prompt("Enter Your English Marks /100"));
+let math = Number(prompt("Enter Your Math Marks /100")); 
+let computer = Number(prompt("Enter Your Computer Marks /100"));
+let physics = Number(prompt("Enter Your Physics Marks /75"));
+let chemistry = Number(prompt("Enter Your Chemistry Marks /75"));
+
+var totalmarks = english + math + computer + physics + chemistry;
+var percentage = (totalmarks / 450) * 100;
+
+if (percentage >= 90 && percentage <= 100) {
+    console.log("grade A");
+}
+else if (percentage >= 80 && percentage <= 89) {
+    console.log("grade B");
+}
+else if (percentage >= 70 && percentage <= 79) {
+    console.log("grade C");
+}
+else if (percentage >= 60 && percentage <= 69) {
+    console.log("grade D");
+}
+else if (percentage >= 40 && percentage <= 59) {
+    console.log("grade E");
+}
+else if (percentage < 40 && percentage >= 0) {
+    console.log("grade F");
+}
+else {
+    console.log("Invalid percentage");
+}
+
 
 
 
